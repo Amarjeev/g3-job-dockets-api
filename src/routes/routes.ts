@@ -13,9 +13,9 @@ import { validateJob } from "../validators/job.validator";
 
 const mainRouter = Router();
 
-mainRouter.post("/create-job", validateJob, createjob);
-mainRouter.use("/fetch-jobs",fetchJob);
-mainRouter.post("/create-docket", validateDocket, createdocket);
+mainRouter.post("/jobs", validateJob, createjob);
+mainRouter.get("/jobs",fetchJob);
+mainRouter.post("/jobs/:jobId/dockets", validateDocket, createdocket);
 mainRouter.get("/jobs/:id",fetchJobDocket);
 mainRouter.patch("/jobs/:id/:status",markJobClose);
 mainRouter.get("/jobs/:jobId/dockets",fetchDocket);

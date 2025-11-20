@@ -5,18 +5,11 @@ export const validateJob = (
   res: Response,
   next: NextFunction
 ) => {
-  const { clientName, siteLocation, status } = req.body;
+  const { clientName, siteLocation} = req.body;
 
-  if (!clientName?.trim() || !siteLocation?.trim() || !status?.trim()) {
+  if (!clientName?.trim() || !siteLocation?.trim()) {
     throw {
       message: "All fields are required",
-      statusCode: 400,
-    };
-  }
-
-  if (!["open", "closed"].includes(status)) {
-    throw {
-      message: "Status must be either 'open' or 'closed'",
       statusCode: 400,
     };
   }

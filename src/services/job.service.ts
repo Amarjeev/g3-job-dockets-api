@@ -4,11 +4,10 @@ import { generateJobId } from "../utils/generateJobId";
 export interface CreateJobDTO {
   clientName: string;
   siteLocation: string;
-  status: "open" | "closed";
 }
 
 export const jobService = {
-  createJob: async ({ clientName, siteLocation, status }: CreateJobDTO) => {
+  createJob: async ({ clientName, siteLocation}: CreateJobDTO) => {
     // Generate unique job ID
     const jobNumber = await generateJobId();
 
@@ -27,7 +26,6 @@ export const jobService = {
     return JobModel.create({
       clientName,
       siteLocation,
-      status,
       jobNumber,
     });
   },

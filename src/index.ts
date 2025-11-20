@@ -14,7 +14,6 @@ app.use(express.json());
 
 app.use("/", mainRouter);
 
-
 // Error Handler
 app.use(errorHandler);
 
