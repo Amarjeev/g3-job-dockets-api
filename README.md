@@ -59,10 +59,15 @@ POST https://g3-job-dockets-api.onrender.com/jobs/:jobId/dockets
 {
 
   "role": "electrician",
+  
   "supervisorName": "amar",
+  
   "date": "29-11-2025",
+  
   "workerName": "Anu",
+  
   "hoursWorked": 18,
+  
   "notes": "Completed foundation trench work."
   
 }
