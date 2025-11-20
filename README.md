@@ -36,9 +36,9 @@ POST https://g3-job-dockets-api.onrender.com/jobs
 
 Update job details in the database
 
-Body:
 {
   "clientName": "Sky Builders Pvt Ltd",
+  
   "siteLocation": "Chennai, Tamil Nadu, Kerala"
 }
 
