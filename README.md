@@ -75,7 +75,9 @@ POST https://g3-job-dockets-api.onrender.com/jobs/:jobId/dockets
 ---
 
 GET https://g3-job-dockets-api.onrender.com/jobs/:id
-Returns a single job including all its dockets.
+
+
+ // Returns a single job including all its dockets.
 
 ---
 
