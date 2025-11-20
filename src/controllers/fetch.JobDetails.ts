@@ -4,7 +4,7 @@ import { jobQueryService } from "../services/job.query";
 //# logic to fetch existe jobs in db
 
 export const fetchJob = async (req: Request, res: Response) => {
-  const status = req.query.status as string;
+      const status = (req.query.status as string)?.trim();
 
   const jobs = await jobQueryService.fetchJobs(status);
 
