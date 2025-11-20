@@ -19,8 +19,8 @@ It supports managing job dockets, workers, supervisors, and work-hour tracking.
 
 Clone this repository and install dependencies:
 
-
 npm install
+
 Development Mode :npm run dev
 
 ## Production Mode
