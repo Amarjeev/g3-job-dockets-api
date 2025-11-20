@@ -34,7 +34,7 @@ PORT=3000
 
 POST https://g3-job-dockets-api.onrender.com/jobs
 
-A Job represents a piece of work at a site.
+Update job details in the database
 
 Body:
 {
