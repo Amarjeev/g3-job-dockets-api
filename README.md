@@ -34,7 +34,7 @@ PORT=3000
 
 POST https://g3-job-dockets-api.onrender.com/jobs
 
-Update job details in the database
+// Update job details in the database
 
 {
 
@@ -53,14 +53,18 @@ GET https://g3-job-dockets-api.onrender.com/jobs?status=open
 ---
 
 POST https://g3-job-dockets-api.onrender.com/jobs/:jobId/dockets
-Body:
+
+// Update Docket details in the database
+
 {
+
   "role": "electrician",
   "supervisorName": "amar",
   "date": "29-11-2025",
   "workerName": "Anu",
   "hoursWorked": 18,
   "notes": "Completed foundation trench work."
+  
 }
 
 ---
