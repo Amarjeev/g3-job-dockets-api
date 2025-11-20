@@ -82,11 +82,13 @@ GET https://g3-job-dockets-api.onrender.com/jobs/:id
 ---
 
 PATCH https://g3-job-dockets-api.onrender.com/jobs/:id/:status
+
 Mark a job as closed.
 
 ---
 
 GET https://g3-job-dockets-api.onrender.com/jobs/:jobId/dockets?from=22-11-2025&to=25-11-2025
+
 List dockets for a job.
 
 Optional Filters:
