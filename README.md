@@ -47,9 +47,8 @@ Update job details in the database
 ---
 
 GET https://g3-job-dockets-api.onrender.com/jobs?status=open
-List jobs.
-Optional Query:
-  ?status=open | closed
+
+// Fetch jobs from the database with optional status filtering (open | closed)
 
 ---
 
