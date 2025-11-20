@@ -23,7 +23,7 @@ export const jobService = {
     }
 
     // Save job to database
-    return JobModel.create({
+    return  JobModel.create({
       clientName,
       siteLocation,
       jobNumber,
