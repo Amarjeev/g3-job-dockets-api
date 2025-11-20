@@ -83,15 +83,15 @@ GET https://g3-job-dockets-api.onrender.com/jobs/:id
 
 PATCH https://g3-job-dockets-api.onrender.com/jobs/:id/:status
 
-Mark a job as closed.
+// Mark a job as closed.
 
 ---
 
 GET https://g3-job-dockets-api.onrender.com/jobs/:jobId/dockets?from=22-11-2025&to=25-11-2025
 
-List dockets for a job.
+ // List dockets for a job.
 
-Optional Filters:
+ // Optional Filters:
   ?from=DD-MM-YYYY &to=DD-MM-YYYY → filter by date range
   ?supervisorName=John → filter by supervisor
 
@@ -99,6 +99,6 @@ Optional Filters:
 
 GET https://g3-job-dockets-api.onrender.com/dockets/summary
 
-Returns a simple summary across all jobs.
+ // Returns a simple summary across all jobs.
 
 ***************************************************
