@@ -98,6 +98,7 @@ Optional Filters:
 ---
 
 GET https://g3-job-dockets-api.onrender.com/dockets/summary
+
 Returns a simple summary across all jobs.
 
 ***************************************************
